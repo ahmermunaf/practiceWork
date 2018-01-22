@@ -181,11 +181,11 @@ class Home extends Component {
                 {/* <!--End Text Banner--> */}
 
                 {/* <!--Services Section--> */}
-                <section className="services-section">
+                {/* <section className="services-section">
                     <div className="auto-container">
                         <div className="row clearfix">
 
-                            {/* <!--Services Block--> */}
+                            <!--Services Block-->
                             <div className="services-block col-md-4 col-sm-6 col-xs-12">
                                 <div className="inner-box">
                                     <div className="upper-box">
@@ -197,7 +197,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Services Block--> */}
+                            <!--Services Block-->
                             <div className="services-block col-md-4 col-sm-6 col-xs-12">
                                 <div className="inner-box">
                                     <div className="upper-box">
@@ -209,7 +209,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Services Block--> */}
+                            <!--Services Block-->
                             <div className="services-block col-md-4 col-sm-6 col-xs-12">
                                 <div className="inner-box">
                                     <div className="upper-box">
@@ -223,10 +223,11 @@ class Home extends Component {
 
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <!--End Services Section--> */}
 
                 {/* <!--Welcome Section--> */}
+                <br />
                 <section className="welcome-section no-padd-top">
                     <div className="auto-container">
                         {/* <!--Sec Title--> */}
@@ -264,12 +265,12 @@ class Home extends Component {
                 {/* <!--End Welcome Section--> */}
 
                 {/* <!--Fun Facts Section--> */}
-                <div className="fact-counter-section" style={{backgroundImage:'url(./assets/images/background/1.jpg)'}}>
+                {/* <div className="fact-counter-section" style={{backgroundImage:'url(./assets/images/background/1.jpg)'}}>
                     <div className="fact-counter">
                         <div className="auto-container">
                             <div className="row clearfix">
 
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
                                     <div className="inner">
                                         <h4 className="counter-title">Donator</h4>
@@ -279,7 +280,7 @@ class Home extends Component {
                                     </div>
                                 </div>
 
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
                                     <div className="inner">
                                         <h4 className="counter-title">Fundrising</h4>
@@ -289,7 +290,7 @@ class Home extends Component {
                                     </div>
                                 </div>
 
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
                                     <div className="inner">
                                         <h4 className="counter-title">Volunteer</h4>
@@ -299,7 +300,7 @@ class Home extends Component {
                                     </div>
                                 </div>
 
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
                                     <div className="inner">
                                         <h4 className="counter-title">Complete Projects</h4>
@@ -312,19 +313,19 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/* <!--End Fun Facts Section--> */}
 
                 {/* <!--Causes Section--> */}
-                <section className="causes-section">
+                {/* <section className="causes-section">
                     <div className="auto-container">
-                        {/* <!--Sec Title--> */}
+                        <!--Sec Title-->
                         <div className="sec-title">
                             <h2>Our Causes</h2>
                         </div>
                         <div className="four-item-carousel owl-carousel owl-theme">
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -356,7 +357,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -388,7 +389,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -420,7 +421,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -452,7 +453,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -484,7 +485,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -516,7 +517,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -548,7 +549,7 @@ class Home extends Component {
                                 </div>
                             </div>
 
-                            {/* <!--Causes Block--> */}
+                            <!--Causes Block-->
                             <div className="causes-block">
                                 <div className="inner-box">
                                     <div className="image">
@@ -582,17 +583,17 @@ class Home extends Component {
 
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <!--End Cases Section--> */}
 
                 {/* <!--Call To Action--> */}
-                <section className="call-to-action" style={{backgroundImage:'url(./assets/images/background/2.jpg)'}}>
+                {/* <section className="call-to-action" style={{backgroundImage:'url(./assets/images/background/2.jpg)'}}>
                     <div className="auto-container">
                         <h2>Become A Volunteer</h2>
                         <div className="text">Lorem ipsum dolor incorrupte exu. Iisque homero dinoaliqui hisno eahaselitr luemosanta. <br /> Usu graecis eleifend intellege ne quiaug tollit. </div>
                         <a href="#" className="theme-btn btn-style-two">Join Us</a>
                     </div>
-                </section>
+                </section> */}
                 {/* <!--Call To Action--> */}
 
                 {/* <!--Events Section--> */}
@@ -600,14 +601,14 @@ class Home extends Component {
                     <div className="auto-container">
                         {/* <!--Sec Title--> */}
                         <div className="sec-title">
-                            <h2>Upcoming Events</h2>
+                            <h2>Upcoming Events And Latest News</h2>
                         </div>
                         <div className="row clearfix">
                             {/* <!--Column--> */}
-                            <div className="column col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            {/* <div className="column col-lg-8 col-md-12 col-sm-12 col-xs-12">
                                 <div className="row clearfix">
 
-                                    {/* <!--Event Block--> */}
+                                    <!--Event Block-->
                                     <div className="event-block col-md-6 col-sm-6 col-xs-12">
                                         <div className="inner-box">
                                             <div className="image">
@@ -624,7 +625,7 @@ class Home extends Component {
                                         </div>
                                     </div>
 
-                                    {/* <!--Event Block--> */}
+                                    <!--Event Block-->
                                     <div className="event-block col-md-6 col-sm-6 col-xs-12">
                                         <div className="inner-box">
                                             <div className="image">
@@ -642,9 +643,34 @@ class Home extends Component {
                                     </div>
 
                                 </div>
+                            </div> */}
+                            <div className="footer-column col-md-4 col-sm-12 col-xs-12" style={{width:'50%'}} >
+                                <div className="footer-widget news-widget">
+                                    <h2>Latest News</h2>
+
+                                    <article className="post">
+                                        {/* <figure className="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-1.jpg" alt="" /></a></figure> */}
+                                        <div className="text"><a href="blog-single.html">Child Education in South-Africa!!</a></div>
+                                        <div className="post-info">Jul 17, 2017 / Business</div>
+                                    </article>
+
+                                    <article className="post">
+                                        {/* <figure className="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-2.jpg" alt="" /></a></figure> */}
+                                        <div className="text"><a href="blog-single.html">Clean Water Provide by Poor People!!</a></div>
+                                        <div className="post-info">Jul 17, 2017 / Business</div>
+                                    </article>
+
+                                    <article className="post">
+                                        {/* <figure className="post-thumb"><a href="blog-single.html"><img src="images/resource/news-thumb-3.jpg" alt="" /></a></figure> */}
+                                        <div className="text"><a href="blog-single.html">We help the hunger People!!</a></div>
+                                        <div className="post-info">Jul 17, 2017 / Business</div>
+                                    </article>
+
+                                </div>
                             </div>
                             {/* <!--Column--> */}
-                            <div className="column col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                            <div className="column col-lg-4 col-md-6 col-sm-12 col-xs-12" style={{width:'50%'}} >
+                            <h2>Events</h2>
                                 {/* <!--Event Block Two--> */}
                                 <div className="event-block-two">
                                     <div className="inner-box">
@@ -685,22 +711,22 @@ class Home extends Component {
                 {/* <!--End Events Section--> */}
 
                 {/* <!--Call To Action Two--> */}
-                <section className="call-to-action-two" style={{backgroundImage:'url(./assets/images/background/3.jpg)'}}>
+                {/* <section className="call-to-action-two" style={{backgroundImage:'url(./assets/images/background/3.jpg)'}}>
                     <div className="auto-container">
                         <div className="inner-container">
                             <div className="row clearfix">
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="column col-md-8 col-sm-12 col-xs-12">
                                     <h2>Want to participate as a volunteer?</h2>
                                 </div>
-                                {/* <!--Column--> */}
+                                <!--Column-->
                                 <div className="btn-column col-md-4 col-sm-12 col-xs-12">
                                     <a href="contact.html" className="theme-btn btn-style-two">Contact Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <!--End Call To Action Two--> */}
 
                 {/* <!--Project Section--> */}
@@ -844,18 +870,18 @@ class Home extends Component {
                 {/* <!--End Gallery Section--> */}
 
                 {/* <!--Testimonial Section--> */}
-                <section className="testimonial-section" style={{backgroundImage:'url(./assets/images/background/4.jpg)'}}>
+                {/* <section className="testimonial-section" style={{backgroundImage:'url(./assets/images/background/4.jpg)'}}>
                     <div className="auto-container">
                         <div className="carousel-outer">
 
-                            {/* <!--Sec Title--> */}
+                            <!--Sec Title-->
                             <div className="sec-title">
                                 <h2>What our client say</h2>
                             </div>
 
                             <div className="single-item-carousel owl-carousel owl-theme">
 
-                                {/* <!--Testimonial Block--> */}
+                                <!--Testimonial Block-->
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <div className="content">
@@ -869,7 +895,7 @@ class Home extends Component {
                                     </div>
                                 </div>
 
-                                {/* <!--Testimonial Block--> */}
+                                <!--Testimonial Block-->
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <div className="content">
@@ -883,7 +909,7 @@ class Home extends Component {
                                     </div>
                                 </div>
 
-                                {/* <!--Testimonial Block--> */}
+                                <!--Testimonial Block-->
                                 <div className="testimonial-block">
                                     <div className="inner-box">
                                         <div className="content">
@@ -901,7 +927,7 @@ class Home extends Component {
 
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* <!--End Testimonial Section--> */}
 
                 {/* <!--Team Section--> */}
@@ -1057,33 +1083,6 @@ class Home extends Component {
                     </div>
                 </section>
                 {/* <!--End Map Section--> */}
-
-                {/* <!--Subscribe Section--> */}
-                <section className="subscribe-section" style={{backgroundImage:'url(./assets/images/background/pattern-1.png)'}}>
-                    <div className="auto-container">
-                        <div className="row clearfix">
-                            <div className="title-column col-md-6 col-sm-12 col-xs-12">
-                                <h2>  Subscribe To Our Newsletter</h2>
-                            </div>
-                            <div className="form-column col-md-6 col-sm-12 col-xs-12">
-
-                                {/* <!--Subscribe Section--> */}
-                                <div className="subscribe-form">
-                                    <form method="post" action="http://effortthemes.com/html/charitypoint/contact.html">
-
-                                        <div className="form-group">
-                                            <input type="email" name="email" value="" placeholder="Enter your E-mail" required />
-                                            <button type="submit" className="theme-btn btn-style-two">Subscribe</button>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-                {/* <!--End Subscribe Section--> */}
 
                 <Footer />
             </span>
