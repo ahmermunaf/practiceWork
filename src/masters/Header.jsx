@@ -68,7 +68,7 @@ class Header extends Component {
                                 <div className="clearfix">
 
                                     <div className="pull-left logo-outer">
-                                        <div className="logo" style={{height:80,width:80}} ><img src="./../../assets/images/logo-jma.jpg" alt="" title="" /></div>
+                                        <div className="logo"><img src="./../../assets/images/logo.png" alt="" title="" /></div>
                                     </div>
 
                                     <div className="pull-right upper-right clearfix">
