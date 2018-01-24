@@ -27,42 +27,6 @@ class Header extends Component {
                 <div className="page-wrapper">
                     <div className="preloader"></div>
                     <header className="main-header header-style-two">
-                        {/* <div className="header-top-two">
-                            <div className="auto-container">
-                                <div className="clearfix">
-
-
-                                    <div className="top-left">
-
-                                        <div className="social-icon">
-                                            <ul className="clearfix">
-                                                <li><a href="#"><span className="fa fa-facebook"></span></a></li>
-                                                <li><a href="#"><span className="fa fa-google-plus"></span></a></li>
-                                                <li><a href="#"><span className="fa fa-twitter"></span></a></li>
-                                                <li><a href="#"><span className="fa fa-pinterest-p"></span></a></li>
-                                                <li><a href="#"><span className="fa fa-behance"></span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                                    <div className="top-right clearfix">
-                                        <div className="search-box">
-                                            <form method="post" action="http://effortthemes.com/html/charitypoint/contact.html">
-                                                <div className="form-group">
-                                                    <input type="search" name="search-field" value="" placeholder="Search...." required />
-                                                    <button type="submit"><span className="icon fa fa-search"></span></button>
-                                                </div>
-                                            </form>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div> */}
-
                         <div className="header-upper">
                             <div className="auto-container">
                                 <div className="clearfix">
@@ -122,9 +86,16 @@ class Header extends Component {
                                         <div className="navbar-collapse collapse clearfix">
                                             <ul className="navigation clearfix">
                                                 {
-                                                    navbar.map((value) => {
-                                                        return <li className={value.href==this.props.currentComponent?'current':''}><Link to={value.href} onClick={()=>{window.location.reload()}} >{value.heading}</Link></li>
-                                                    })
+                                                    navbar.map((value,index) => ( 
+                                                        <li key={index} className={value.href==this.props.currentComponent?'current':''}>
+                                                            <Link 
+                                                            to={value.href} 
+                                                           // onClick={()=>{window.location.reload()}}
+                                                            >
+                                                                {value.heading}
+                                                            </Link>
+                                                        </li>
+                                                    ))
                                                 }
                                             </ul>
                                         </div>
@@ -163,9 +134,16 @@ class Header extends Component {
                                         <div className="navbar-collapse collapse clearfix">
                                             <ul className="navigation clearfix">
                                                 {
-                                                    navbar.map((value,ind) => {
-                                                        return <li key={ind} className={value.href==this.props.currentComponent?'current':''}><Link to={value.href}>{value.heading}</Link></li>
-                                                    })
+                                                    navbar.map((value,ind) => (
+                                                        <li key={ind} className={value.href==this.props.currentComponent?'current':''}>
+                                                            <Link 
+                                                            to={value.href} 
+                                                            //onClick={()=>{window.location.reload()}}
+                                                            >
+                                                                {value.heading}
+                                                            </Link>
+                                                        </li>
+                                                    ))
                                                 }
                                             </ul>
                                         </div>

@@ -1,29 +1,18 @@
 import Header from '../masters/Header'
 import Footer from '../masters/Footer'
 import React, { Component } from 'react'
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 class Home extends Component {
-    constructor(){
-        super();
-        this.state={
-            flag:false
-        }
-        console.log('hhahahah')
-    }
-   async componentDidMount(){
-        console.log('hey')
-       await this.setState({
-            flag:true
-        })
-    }
     render() {
         document.title = "Home";
         return (
             <span>
                 <Header currentComponent="/" />
-                {(this.state.flag === true) ? 
                 <div className="page-wrapper">
                     {/* <!--Main Slider--> */}
-                    <section className="main-slider">
+                    {/* <section className="main-slider">
 
                         <div className="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
                             <div className="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
@@ -168,64 +157,25 @@ class Home extends Component {
                                 </ul>
                             </div>
                         </div>
-                    </section>
-                </div>:null
-            }
-                {/* <!--End Main Slider--> */}
-                {/* <!--Text Banner--> */}
-                {/* <section className="text-banner">
-                    <div className="auto-container">
-                        <div className="text">We are non-profit NGO & Charity Organization</div>
-                    </div>
-                </section> */}
-                {/* <!--End Text Banner--> */}
-
-                {/* <!--Services Section--> */}
-                {/* <section className="services-section">
-                    <div className="auto-container">
-                        <div className="row clearfix">
-
-                            <!--Services Block-->
-                            <div className="services-block col-md-4 col-sm-6 col-xs-12">
-                                <div className="inner-box">
-                                    <div className="upper-box">
-                                        <div className="icon-box"><span className="flaticon-coins"></span></div>
-                                        <h3><a href="donate.html">Donation</a></h3>
-                                        <div className="title">Collect fund over the world</div>
-                                    </div>
-                                    <div className="text">There are many variations of passage of Lorem Ipsum available, but the majority have suffered ... </div>
-                                </div>
-                            </div>
-
-                            <!--Services Block-->
-                            <div className="services-block col-md-4 col-sm-6 col-xs-12">
-                                <div className="inner-box">
-                                    <div className="upper-box">
-                                        <div className="icon-box"><span className="flaticon-money-bag-1"></span></div>
-                                        <h3><a href="donate.html">Fundrising</a></h3>
-                                        <div className="title">Collect fund over the world</div>
-                                    </div>
-                                    <div className="text">There are many variations of passage of Lorem Ipsum available, but the majority have suffered ... </div>
-                                </div>
-                            </div>
-
-                            <!--Services Block-->
-                            <div className="services-block col-md-4 col-sm-6 col-xs-12">
-                                <div className="inner-box">
-                                    <div className="upper-box">
-                                        <div className="icon-box"><span className="flaticon-blood-donation"></span></div>
-                                        <h3><a href="donate.html">Volunteer</a></h3>
-                                        <div className="title">Collect fund over the world</div>
-                                    </div>
-                                    <div className="text">There are many variations of passage of Lorem Ipsum available, but the majority have suffered ... </div>
-                                </div>
-                            </div>
-
+                    </section> */}
+                    <Carousel
+                    showArrows={true}
+                    showIndicators={false}
+                    showThumbs={false}
+                    showStatus={false}
+                    infiniteLoop={true}
+                    transitionTime={750}
+                    >
+                        <div>
+                            <img src="./assets/images/main-slider/image-1.jpg" />
                         </div>
-                    </div>
-                </section> */}
-                {/* <!--End Services Section--> */}
-
+                        <div>
+                            <img src="./assets/images/main-slider/image-2.jpg" />
+                        </div>
+                    </Carousel>
+                </div>
+                {/* <!--End Main Slider--> */}
+                
                 {/* <!--Welcome Section--> */}
                 <br />
                 <section className="welcome-section no-padd-top">
@@ -263,339 +213,7 @@ class Home extends Component {
                     </div>
                 </section>
                 {/* <!--End Welcome Section--> */}
-
-                {/* <!--Fun Facts Section--> */}
-                {/* <div className="fact-counter-section" style={{backgroundImage:'url(./assets/images/background/1.jpg)'}}>
-                    <div className="fact-counter">
-                        <div className="auto-container">
-                            <div className="row clearfix">
-
-                                <!--Column-->
-                                <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
-                                    <div className="inner">
-                                        <h4 className="counter-title">Donator</h4>
-                                        <div className="count-outer count-box">
-                                            <span className="count-text" data-speed="3500" data-stop="3586">0</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Column-->
-                                <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
-                                    <div className="inner">
-                                        <h4 className="counter-title">Fundrising</h4>
-                                        <div className="count-outer count-box">
-                                            <span className="count-text" data-speed="5000" data-stop="95580">0</span><span className="plus-icon">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Column-->
-                                <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
-                                    <div className="inner">
-                                        <h4 className="counter-title">Volunteer</h4>
-                                        <div className="count-outer count-box">
-                                            <span className="count-text" data-speed="2000" data-stop="640">0</span><span className="plus-icon">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Column-->
-                                <div className="column counter-column col-md-3 col-sm-6 col-xs-12">
-                                    <div className="inner">
-                                        <h4 className="counter-title">Complete Projects</h4>
-                                        <div className="count-outer count-box">
-                                            <span className="count-text" data-speed="2000" data-stop="1980">0</span><span className="plus-icon">+</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                {/* <!--End Fun Facts Section--> */}
-
-                {/* <!--Causes Section--> */}
-                {/* <section className="causes-section">
-                    <div className="auto-container">
-                        <!--Sec Title-->
-                        <div className="sec-title">
-                            <h2>Our Causes</h2>
-                        </div>
-                        <div className="four-item-carousel owl-carousel owl-theme">
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Help for Education</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Providing Clothes</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-3.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Feeding the Hungry</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-4.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Donate Clean Water</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-1.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Help for Education</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-2.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Providing Clothes</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-3.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Feeding the Hungry</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--Causes Block-->
-                            <div className="causes-block">
-                                <div className="inner-box">
-                                    <div className="image">
-                                        <a href="causes-single.html"><img src="./assets/images/resource/case-4.jpg" alt="" /></a>
-                                    </div>
-                                    <div className="lower-content">
-                                        <h3><a href="causes-single.html">Donate Clean Water</a></h3>
-                                        <div className="content">
-                                            <div className="text">We are confident to confirm that all members in Charity are professionals in the charity.</div>
-                                            <div className="overlay-box">
-                                                <div className="collect">We need to collect <span className="theme_color">9,500,000</span></div>
-                                                <div className="donate-percentage">
-                                                    <div className="donate-bar">
-                                                        <span className="bar-line"></span>
-                                                    </div>
-                                                    <div className="amounts clearfix">
-                                                        <div className="total-percent">53%</div>
-                                                        <div className="pull-left number">00</div>
-                                                        <div className="pull-right number">9,500,000</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="btns-box">
-                                            <a href="donate.html" className="theme-btn btn-style-two">Donate</a>
-                                            <a href="causes-single.html" className="theme-btn btn-style-four">More Detail</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section> */}
-                {/* <!--End Cases Section--> */}
-
-                {/* <!--Call To Action--> */}
-                {/* <section className="call-to-action" style={{backgroundImage:'url(./assets/images/background/2.jpg)'}}>
-                    <div className="auto-container">
-                        <h2>Become A Volunteer</h2>
-                        <div className="text">Lorem ipsum dolor incorrupte exu. Iisque homero dinoaliqui hisno eahaselitr luemosanta. <br /> Usu graecis eleifend intellege ne quiaug tollit. </div>
-                        <a href="#" className="theme-btn btn-style-two">Join Us</a>
-                    </div>
-                </section> */}
-                {/* <!--Call To Action--> */}
-
+                
                 {/* <!--Events Section--> */}
                 <section className="events-section">
                     <div className="auto-container">
@@ -604,46 +222,6 @@ class Home extends Component {
                             <h2>Upcoming Events And Latest News</h2>
                         </div>
                         <div className="row clearfix">
-                            {/* <!--Column--> */}
-                            {/* <div className="column col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                                <div className="row clearfix">
-
-                                    <!--Event Block-->
-                                    <div className="event-block col-md-6 col-sm-6 col-xs-12">
-                                        <div className="inner-box">
-                                            <div className="image">
-                                                <img src="./assets/images/resource/event-1.jpg" alt="" />
-                                                <a href="donate.html" className="overlay-box">
-                                                    <div className="text">Donate Now</div>
-                                                </a>
-                                            </div>
-                                            <div className="lower-box">
-                                                <div className="post-info">12:00 PM, 18 October, 2017 / <span className="theme_color">Sanfransico, CA</span></div>
-                                                <h3><a href="events-single.html">Save Homeless People</a></h3>
-                                                <div className="text">Aenean aliquam egestas augue, eu venenatis massa maximus sed. Nam convallis vestibulum purus ac egestas....</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Event Block-->
-                                    <div className="event-block col-md-6 col-sm-6 col-xs-12">
-                                        <div className="inner-box">
-                                            <div className="image">
-                                                <img src="./assets/images/resource/event-2.jpg" alt="" />
-                                                <a href="donate.html" className="overlay-box">
-                                                    <div className="text">Donate Now</div>
-                                                </a>
-                                            </div>
-                                            <div className="lower-box">
-                                                <div className="post-info">12:00 PM, 18 October, 2017 / <span className="theme_color">25 Newyork City.</span></div>
-                                                <h3><a href="events-single.html">Food Help for the hunger people</a></h3>
-                                                <div className="text">Aenean aliquam egestas augue, eu venenatis massa maximus sed. Nam convallis vestibulum purus ac egestas....</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> */}
                             <div className="footer-column col-md-4 col-sm-12 col-xs-12" style={{width:'50%'}} >
                                 <div className="footer-widget news-widget">
                                     <h2>Latest News</h2>
@@ -708,26 +286,6 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
-                {/* <!--End Events Section--> */}
-
-                {/* <!--Call To Action Two--> */}
-                {/* <section className="call-to-action-two" style={{backgroundImage:'url(./assets/images/background/3.jpg)'}}>
-                    <div className="auto-container">
-                        <div className="inner-container">
-                            <div className="row clearfix">
-                                <!--Column-->
-                                <div className="column col-md-8 col-sm-12 col-xs-12">
-                                    <h2>Want to participate as a volunteer?</h2>
-                                </div>
-                                <!--Column-->
-                                <div className="btn-column col-md-4 col-sm-12 col-xs-12">
-                                    <a href="contact.html" className="theme-btn btn-style-two">Contact Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-                {/* <!--End Call To Action Two--> */}
 
                 {/* <!--Project Section--> */}
                 <section className="project-section">
@@ -869,67 +427,6 @@ class Home extends Component {
                 </section>
                 {/* <!--End Gallery Section--> */}
 
-                {/* <!--Testimonial Section--> */}
-                {/* <section className="testimonial-section" style={{backgroundImage:'url(./assets/images/background/4.jpg)'}}>
-                    <div className="auto-container">
-                        <div className="carousel-outer">
-
-                            <!--Sec Title-->
-                            <div className="sec-title">
-                                <h2>What our client say</h2>
-                            </div>
-
-                            <div className="single-item-carousel owl-carousel owl-theme">
-
-                                <!--Testimonial Block-->
-                                <div className="testimonial-block">
-                                    <div className="inner-box">
-                                        <div className="content">
-                                            <div className="text"><span className="left-icon la la-quote-left"></span> Moluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt Moluptate velit esse cillum dolore eu fugiat nulla pariatur. <span className="right-icon la la-quote-right"></span></div>
-                                            <h3>Joseph Anderson</h3>
-                                            <div className="designation">Managing Director</div>
-                                        </div>
-                                        <div className="image">
-                                            <img src="./assets/images/resource/author.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Testimonial Block-->
-                                <div className="testimonial-block">
-                                    <div className="inner-box">
-                                        <div className="content">
-                                            <div className="text"><span className="left-icon la la-quote-left"></span> Moluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt Moluptate velit esse cillum dolore eu fugiat nulla pariatur. <span className="right-icon la la-quote-right"></span></div>
-                                            <h3>Joseph Anderson</h3>
-                                            <div className="designation">Managing Director</div>
-                                        </div>
-                                        <div className="image">
-                                            <img src="./assets/images/resource/author.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Testimonial Block-->
-                                <div className="testimonial-block">
-                                    <div className="inner-box">
-                                        <div className="content">
-                                            <div className="text"><span className="left-icon la la-quote-left"></span> Moluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt Moluptate velit esse cillum dolore eu fugiat nulla pariatur. <span className="right-icon la la-quote-right"></span></div>
-                                            <h3>Joseph Anderson</h3>
-                                            <div className="designation">Managing Director</div>
-                                        </div>
-                                        <div className="image">
-                                            <img src="./assets/images/resource/author.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </section> */}
-                {/* <!--End Testimonial Section--> */}
-
                 {/* <!--Team Section--> */}
                 <section className="team-section">
                     <div className="auto-container">
@@ -1064,26 +561,6 @@ class Home extends Component {
                     </div>
                 </section>
                 {/* <!--End Team Section--> */}
-
-                {/* <!--Map Section--> */}
-                <section className="map-section">
-                    {/* <!--Map Outer--> */}
-                    <div className="map-outer">
-                        {/* <!--Map Canvas--> */}
-                        <div className="map-canvas"
-                            data-zoom="16"
-                            data-lat="24.877873"
-                            data-lng="67.08465389999999"
-                            data-type="roadmap"
-                            data-hue="#ffc400"
-                            data-title="Jetpur Memon Community Centre"
-                            data-icon-path="images/icons/map-marker-2.png"
-                            data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
-                        </div>
-                    </div>
-                </section>
-                {/* <!--End Map Section--> */}
-
                 <Footer />
             </span>
         )

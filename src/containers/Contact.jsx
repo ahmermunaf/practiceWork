@@ -106,26 +106,12 @@ class Contact extends Component {
 
                         </div>
                     </div>
-
-                    {/* <!--Map Section--> */}
-                    <section className="map-section">
-                        {/* <!--Map Outer--> */}
-                        <div className="map-outer">
-                            {/* <!--Map Canvas--> */}
-                            <div className="map-canvas"
-                                data-zoom="12"
-                                data-lat="-37.817085"
-                                data-lng="144.955631"
-                                data-type="roadmap"
-                                data-hue="#ffc400"
-                                data-title="Envato"
-                                data-icon-path="images/icons/map-marker.png"
-                                data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
-                            </div>
-                        </div>
-                    </section>
-                    {/* <!--End Map Section--> */}
                 </div>
+                <iframe
+                    style={{width:'100%',height:600,border:0}} 
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD30EQWgjVEGrEn550dH9AgelRZ0slMY48&q=jetpur+memon,association" allowfullscreen>
+                </iframe>
                 <Footer />
             </span>
         )
