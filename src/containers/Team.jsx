@@ -2,6 +2,8 @@ import Header from '../masters/Header'
 import Footer from '../masters/Footer'
 import { Link } from 'react-router-dom'
 import React, { Component } from 'react'
+
+
 class Team extends Component {
     render() {
         document.title = "Our Team";

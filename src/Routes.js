@@ -6,10 +6,12 @@ import Home from './containers/Home';
 import About from './containers/About';
 import Team from './containers/Team';
 import Contact from './containers/Contact';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const customHistory=createBrowserHistory();
 
 const Routes = () => (
+    <ParallaxProvider>
     <Router history={customHistory} >
         <span>
             <Route exact path='/' component={Home} />
@@ -18,5 +20,6 @@ const Routes = () => (
             <Route path='/team' component={Team} />
         </span>
     </Router >
+    </ParallaxProvider>
 )
 export default Routes;
