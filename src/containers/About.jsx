@@ -1,5 +1,6 @@
 import Header from '../masters/Header'
 import Footer from '../masters/Footer'
+import { Link } from 'react-router-dom'
 import React, { Component } from 'react'
 class About extends Component {
     render() {
@@ -19,7 +20,7 @@ class About extends Component {
                                 {/* <!--Bread Crumb --> */}
                                 <div className="breadcrumb-column col-md-6 col-sm-4 col-xs-12">
                                     <ul className="bread-crumb clearfix">
-                                        <li><a href="index-2.html">Home</a></li>
+                                        <li><Link to="/">Home</Link></li>
                                         <li className="active">About Us</li>
                                     </ul>
                                 </div>

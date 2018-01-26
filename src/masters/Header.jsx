@@ -41,7 +41,8 @@ class Header extends Component {
                                         <div className="upper-column info-box">
                                             <ul>
                                                 <li><span className="icon flaticon-technology-1"></span><strong>Phone.</strong></li>
-                                                <li>(1) 111-123-458</li>
+                                                <li>021-34394537</li>
+                                                <li>021-34314937</li>
                                             </ul>
                                         </div>
 
@@ -49,7 +50,7 @@ class Header extends Component {
                                         <div className="upper-column info-box">
                                             <ul>
                                                 <li><span className="icon flaticon-symbol"></span><strong>Email</strong></li>
-                                                <li>mail@example.com</li>
+                                                <li>info@jetpurmemonassociation.com</li>
                                             </ul>
                                         </div>
 
@@ -57,7 +58,8 @@ class Header extends Component {
                                         <div className="upper-column info-box">
                                             <ul>
                                                 <li><span className="icon flaticon-location-pin"></span><strong>Location</strong></li>
-                                                <li>Tottenam Road, NewYark.</li>
+                                                <li>Plot No. S.N.P.A - 30, Block-B, Adamjee Nagar, </li>
+                                                <li>Opp: Kathiawar Hall, Karachi-75350</li>
                                             </ul>
                                         </div>
 

@@ -1,6 +1,7 @@
 import Header from '../masters/Header'
 import Footer from '../masters/Footer'
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 class Contact extends Component {
     render() {
         document.title = "Contact Us";
@@ -20,7 +21,7 @@ class Contact extends Component {
                                 {/* <!--Bread Crumb --> */}
                                 <div className="breadcrumb-column col-md-6 col-sm-4 col-xs-12">
                                     <ul className="bread-crumb clearfix">
-                                        <li><a href="index-2.html">Home</a></li>
+                                        <li><Link to="/">Home</Link></li>
                                         <li className="active">Contact</li>
                                     </ul>
                                 </div>
@@ -41,7 +42,7 @@ class Contact extends Component {
                                             <span className="icon flaticon-world"></span>
                                         </div>
                                         <h3>Address</h3>
-                                        <div className="text">Cecil Sharp House14 Tottenham <br /> Court Road, NewYark.</div>
+                                        <div className="text">Plot No. S.N.P.A - 30, Block-B, Adamjee Nagar, <br />Opp: Kathiawar Hall, Karachi-75350</div>
                                     </div>
                                 </div>
 
@@ -52,7 +53,7 @@ class Contact extends Component {
                                             <span className="icon flaticon-technology-1"></span>
                                         </div>
                                         <h3>Phone</h3>
-                                        <div className="text">You call us on phone number. <br /> 1(784)-775-97-377</div>
+                                        <div className="text">021-34394537<br />021-34314937</div>
                                     </div>
                                 </div>
 
@@ -63,7 +64,7 @@ class Contact extends Component {
                                             <span className="icon flaticon-symbol"></span>
                                         </div>
                                         <h3>Email</h3>
-                                        <div className="text">info@yoursite.com <br /> www.infoyoursite.com</div>
+                                        <div className="text">info@jetpurmemonassociation.com <br /> www.jetpurmemonassociation.com</div>
                                     </div>
                                 </div>
 

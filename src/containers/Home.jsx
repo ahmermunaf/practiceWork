@@ -159,8 +159,8 @@ class Home extends Component {
                         </div>
                     </section> */}
                     <Carousel
-                    showArrows={true}
-                    showIndicators={false}
+                    showArrows={false}
+                    showIndicators={true}
                     showThumbs={false}
                     showStatus={false}
                     infiniteLoop={true}
